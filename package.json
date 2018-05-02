@@ -1,0 +1,48 @@
+{
+  "name": "Todo-list",
+  "version": "1.0.0",
+  "description": "Todo list Application",
+  "main": "index.js",
+  "author": "Abdul Jabbar <m.jabbar.bcs@gmail.com>",
+  "license": "MIT",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "engines": {
+    "node": ">=6.10.2",
+    "npm": ">=4.2.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "build:prod": "gulp build:prod",
+    "watch": "gulp watch",
+    "clean": "gulp clean"
+  },
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-ui-router": "^0.4.2",
+    "ui-select":"*",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "compression-webpack-plugin": "^0.4.0",
+    "css-loader": "^0.28.0",
+    "del": "^2.2.2",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "gulp": "^3.9.1",
+    "html-loader": "^0.4.5",
+    "immutable": "^3.8.1",
+    "isomorphic-fetch": "^2.2.1",
+    "jquery": "^3.2.1",
+    "node-sass": "^4.5.2",
+    "normalize.css": "^6.0.0",
+    "postcss-loader": "^1.3.3",
+    "sass-loader": "^6.0.3",
+    "uglify-js": "^2.8.22",
+    "uglifyjs-webpack-plugin": "^0.4.3",
+    "webpack": "^2.4.1",
+    "webpack-stream": "^3.2.0"
+  }
+}

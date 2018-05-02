@@ -1,0 +1,20 @@
+<h3>ADD TODO</h3>
+
+<input type="text" ng-model="ctrl_todo.todo" placeholder="Enter todos here...">
+<button class="btn btn-default btn-xs" ng-click="ctrl_todo.addTodo()">Add Todo</button>
+
+
+<hr>
+<h3>TODO List</h3>
+<div class="actions">
+    <button class="btn btn-default btn-xs" ng-click="ctrl_todo.selectAll()">Select All</button>
+    <button class="btn btn-default btn-xs" ng-click="ctrl_todo.removeSelected()">Remove selected</button>
+    <button class="btn btn-default btn-xs" ng-click="ctrl_todo.removeAll()">Remove all</button>
+</div>
+<ui-select multiple ng-model="ctrl_todo.todos" theme="bootstrap"  close-on-select="false" style="width: 300px;" title="Choose a todo">
+    <ui-select-match placeholder="Select todo...">{{$item}}</ui-select-match>
+    <ui-select-choices repeat="todo in ctrl_todo.availableTodos | filter:$select.search">
+        {{todo}}
+    </ui-select-choices>
+</ui-select>
+<p>Selected: {{ctrl_todo.todos}}</p>
